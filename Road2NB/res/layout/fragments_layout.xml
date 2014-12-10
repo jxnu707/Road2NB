@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/fragment_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="This is Fragment1"
+        android:textSize="18sp"
+        android:background="#FF0000"
+        android:visibility="gone"/>
+
+    <TextView 
+        android:id="@+id/fragment_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="This is a Fragment2"
+        android:textSize="18sp"
+        android:background="#0000FF"
+        android:visibility="gone"/>
+</LinearLayout>

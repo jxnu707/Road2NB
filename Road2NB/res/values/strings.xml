@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Road2NB</string>
+    
+    <string-array name="item_content_array">
+        <item >Usage: startActivityForResult</item>
+        <item >Usage: onNewIntent</item>
+        <item >Usage: Fragment</item>
+    </string-array>
+
+</resources>

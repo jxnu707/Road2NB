@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="This Title 0"
+    android:summary="This summary 0">
+    <!-- category 之间就是一块内容 会有分割线分开不同category -->
+    <PreferenceCategory
+        android:title="This title 1"
+        android:summary="This summary 1">
+        
+        <CheckBoxPreference
+           android:key="key_checkBox" 
+           android:title="checkBox title" 
+           android:summary="checkBox summary"
+           android:defaultValue="true"/>
+        
+        <Preference 
+            android:key="key_preference"
+            android:title="preference title"
+            android:summary="preference summary"/>
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="This title 2"
+        android:summary="This summary 2">
+        
+        <SwitchPreference />
+        	
+        <ListPreference android:entryValues="@array/item_content_array"/>
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>
