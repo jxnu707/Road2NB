@@ -37,7 +37,7 @@ public class MenuFragment extends PreferenceFragment implements
 			return true;
 		}else{
 			FragmentTransaction ft = getActivity().getFragmentManager().beginTransaction();
-			ft.replace(R.id.content, fragmentCheck == null?ContentFragment.newInstance(key):fragmentCheck, key);
+			ft.replace(R.id.content, fragmentCheck == null?ContentFragment.newInstance(key,false):fragmentCheck, key).commit();
 		}
 		
 		//anyway,need to toggle the slidingMenu.

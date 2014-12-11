@@ -54,6 +54,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+         <activity
+            android:name="kinds.fragment.FragMentActivity"
+            android:label="FragMentActivity" 
+            >
+            <intent-filter>
+                <action android:name="com.xu.Fragment" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

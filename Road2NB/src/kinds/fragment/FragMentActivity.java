@@ -10,7 +10,6 @@ import com.xu.road2nb.R;
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.view.MenuCompat;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 
@@ -30,9 +29,9 @@ public class FragMentActivity extends SlidingActivity {
 		//给 menu content 添加fragment
 		FragmentTransaction ft = getFragmentManager().beginTransaction();
 		MenuFragment mMenuFragment = new MenuFragment();
-		ContentFragment mContentFragment = ContentFragment.newInstance("Welcome");
+		ContentFragment mContentFragment = ContentFragment.newInstance("Welcome",true);
 		ft.replace(R.id.menu, mMenuFragment);
-		ft.replace(R.id.content, mContentFragment,"Welcome Tag!");
+		ft.replace(R.id.content, mContentFragment,"Welcome");
 		ft.commit();
 		
 		//创建侧滑菜单的实例

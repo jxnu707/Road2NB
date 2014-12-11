@@ -31,7 +31,7 @@ public class ContentFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //setRetainInstance(true) activity重建时恢复fragment  在onCreate中设置为true后 当fragment重建时 会跳过onCreate方法 从onAttach->onCrateView 所以不要在onCreate中作初始化操作
+      //setRetainInstance(true) activity重建时恢复 在onCreate中设置为true后 当fragment重建时 会跳过onCreate方法 从onAttach->onCrateView 所以不要在onCreate中作初始化操作
         setRetainInstance(true);
         Log.e("Krislq", "onCreate:"+text);
     }

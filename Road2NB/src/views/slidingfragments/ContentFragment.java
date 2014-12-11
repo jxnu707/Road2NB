@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class ContentFragment extends Fragment {
 
 	private String contentStr;
-	private boolean isShow = false;
+	private boolean isShow ;
 	
 	public static ContentFragment newInstance(String content){
 		Bundle b = new Bundle();
@@ -66,9 +66,10 @@ public class ContentFragment extends Fragment {
 	public void onDestroyView() {
 		// TODO Auto-generated method stub
 		super.onDestroyView();
-		Bundle b = getArguments();
-		b.putBoolean("isShow", false);
-		setArguments(b);
+		//fragment 还是active时 不能setArguments
+//		Bundle b = getArguments();
+//		b.putBoolean("isShow", false);
+//		setArguments(b);
 		
 	}
 
