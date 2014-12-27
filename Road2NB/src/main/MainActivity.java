@@ -65,6 +65,7 @@ public class MainActivity extends Activity {
 				
 				Intent intent = new Intent(action);
 				intent.putExtra("value", "msg come from MainActivity.");
+				//position 作为每一个唯一的 requestCode
 				startActivityForResult(intent, position);
 			}
 			

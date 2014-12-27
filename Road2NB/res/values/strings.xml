@@ -6,6 +6,7 @@
         <item >Usage: startActivityForResult</item>
         <item >Usage: onNewIntent</item>
         <item >Usage: Fragment</item>
+        <item >Usage: AIDL</item>
     </string-array>
 
 </resources>

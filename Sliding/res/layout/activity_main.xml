@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    
+
+    <com.xu.sliding.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slide_bg" >
+        <TextView
+        android:id="@+id/slider_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:drawableStart="@drawable/slide_block"
+        android:visibility="invisible" >
+    </TextView>
+
+        <TextView
+            android:id="@+id/slider_dst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dip"
+            android:drawableStart="@drawable/slide_block"
+            android:visibility="invisible" >
+        </TextView>
+    </com.xu.sliding.SlidingRelativeLayout>
+
+</FrameLayout>

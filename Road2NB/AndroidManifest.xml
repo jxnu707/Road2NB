@@ -21,50 +21,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-         <activity
+        <activity
             android:name="kinds.MyOnNewIntentActivity"
-            android:label="MyOnNewIntentActivity" 
-            android:launchMode="singleTask">
+            android:label="MyOnNewIntentActivity"
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="com.xu.onNewIntent" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-         <activity
+        <activity
             android:name="kinds.MyResultActivity"
-            android:label="MyOnNewIntentActivity" 
-            >
+            android:label="MyOnNewIntentActivity" >
             <intent-filter>
                 <action android:name="com.xu.startActivityForResult" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-         <activity
+        <activity
             android:name="kinds.fragment.MyMainFragmentsActivity"
-            android:label="MyFragmentsActivity" 
-            >
+            android:label="MyFragmentsActivity" >
             <intent-filter>
                 <action android:name="com.xu.Fragment" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-         <activity
+        <activity
             android:name="kinds.fragment.FragMentActivity"
-            android:label="FragMentActivity" 
-            >
+            android:label="FragMentActivity" >
             <intent-filter>
                 <action android:name="com.xu.Fragment" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="kinds.MyAidlActivity"
+            android:label="MyAidlActivity" >
+            <intent-filter>
+                <action android:name="com.xu.AIDL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

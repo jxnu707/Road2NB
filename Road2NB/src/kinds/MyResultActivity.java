@@ -18,6 +18,7 @@ public class MyResultActivity extends Activity {
 		setContentView(R.layout.myresultactivity_layout);
 		
 		Intent intent = new Intent();
+		//该activity返回到上一个调用activity时 这个intent作为数据承载对象
 		intent.putExtra("result", "msg come from MyResultActivity");
 		setResult(Activity.RESULT_OK, intent);
 	}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D.S滑动解锁</string>
+    <string name="hint_unlock">小小滑动一下吧</string>
+</resources>
