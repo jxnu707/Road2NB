@@ -19,7 +19,7 @@ import android.widget.TextView;
 public class SlidingRelativeLayout extends RelativeLayout {
 
 	private final static String TAG = "SlidingRelativeLayou";
-	private final static int UNLOCK = 1;
+//	private final static int UNLOCK = 1;
 	private Bitmap dragBitmap = null;
 	private Resources res;
 
