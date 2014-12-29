@@ -60,7 +60,6 @@ public class SlidingRelativeLayout extends RelativeLayout {
 					R.drawable.slide_block);
 	}
 
-	// private int srcMotionx;
 	private int removeMotionX;
 
 	@Override
