@@ -61,7 +61,7 @@ public class SlidingRelativeLayout extends RelativeLayout {
 	}
 
 	/*
-	 * 只有viewgroup中有该方法 用于分发从父类dispatch下来的touchevent 一般不重写这个方法
+	 * view/viewgroup中有该方法 用于分发从父类dispatch下来的touchevent 一般不重写这个方法
 	 * 
 	 * @see android.view.ViewGroup#dispatchTouchEvent(android.view.MotionEvent)
 	 */
@@ -72,8 +72,8 @@ public class SlidingRelativeLayout extends RelativeLayout {
 	}
 
 	/*
-	 * view和viewgroup拥有 用于拦截一个touchevent 默认返回false 表示不拦截
-	 * 继续向下分配给子view处理这个touchevent 返回true 表示拦截 touchevent将在这个viewgroup/view中处理
+	 * viewgroup拥有 用于拦截一个touchevent 默认返回false 表示不拦截 继续向下分配给子view处理这个touchevent
+	 * 返回true 表示拦截 touchevent将在这个viewgroup/view中处理(对应的onTouchevent（）方法)
 	 * 不向下传递给子view
 	 * 
 	 * @see
@@ -93,6 +93,14 @@ public class SlidingRelativeLayout extends RelativeLayout {
 	 * 都将由上层中接受了Down的父类处理
 	 * 
 	 * @see android.view.View#onTouchEvent(android.view.MotionEvent)
+	 */
+
+	/*
+	 * “记忆”功能的信息只在一系列事件完成之前有效，如从ACTION_DOWN事件开始，直到后续事件ACTION_MOVE，ACTION_UP结束后，“记忆
+	 * ”的信息就会清除。
+	 * 也就是说如果某View处理ACTION_DOWN事件失败了（onTouchEvent()返回false），那么后续的ACTION_MOVE
+	 * ,ACTION_UP等事件就不会再传递到该View了，由其父View自己来处理。
+	 * 在下一次发生ACTION_DOWN事件的时候，还是会传递到该View的
 	 */
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
