@@ -59,9 +59,36 @@ public class SlidingRelativeLayout extends RelativeLayout {
 			dragBitmap = BitmapFactory.decodeResource(res,
 					R.drawable.slide_block);
 	}
+	
+	/* 
+	 * 只有viewgroup中有该方法 用于分发从父类dispatch下来的touchevent 一般不重写这个方法
+	 * @see android.view.ViewGroup#dispatchTouchEvent(android.view.MotionEvent)
+	 */
+	@Override
+	public boolean dispatchTouchEvent(MotionEvent ev) {
+		// TODO Auto-generated method stub
+		return super.dispatchTouchEvent(ev);
+	}
+
+	/* 
+	 * view和viewgroup拥有 用于拦截一个touchevent 默认返回false 表示不拦截 继续向下分配给子view处理这个touchevent
+	 * 										    返回true 表示拦截 touchevent将在这个viewgroup/view中处理 不向下传递给子view
+	 * @see android.view.ViewGroup#onInterceptTouchEvent(android.view.MotionEvent)
+	 */
+	@Override
+	public boolean onInterceptTouchEvent(MotionEvent ev) {
+		// TODO Auto-generated method stub
+		return super.onInterceptTouchEvent(ev);
+	}
+	
 
 	private int removeMotionX;
 
+	/*
+	 * view和viewgroup拥有 用于处理一个touchevent 返回true表示成功处理（消费）这个touchevent
+	 * 										返回false表示无法处理 该touchevent将向上依次返回给父view处理 这次的Down 包括后面的 Move  Up 都将由上层中接受了Down的父类处理
+	 * @see android.view.View#onTouchEvent(android.view.MotionEvent)
+	 */
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		// TODO Auto-generated method stub
@@ -85,9 +112,10 @@ public class SlidingRelativeLayout extends RelativeLayout {
 			return true;
 		}
 
-		return super.onTouchEvent(event);
+		return true;
 
 	}
+	
 
 	private void handleActionUp(MotionEvent event) {
 		int x = (int) event.getX();
@@ -105,6 +133,8 @@ public class SlidingRelativeLayout extends RelativeLayout {
 		}
 	}
 
+	
+	
 	// 回退动画时间间隔值
 	private static int BACK_DURATION = 20; // 20ms
 	// 水平方向前进速率
@@ -173,6 +203,7 @@ public class SlidingRelativeLayout extends RelativeLayout {
 		this.mainHandler = handler;
 	}
 
+	//提供给调用者 到达解锁位置后的回调
 	public interface OnUnlockListener {
 
 		public void onUnlock();
