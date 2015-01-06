@@ -67,6 +67,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="kinds.MyJniActivity"
+            android:label="MyJniActivity" >
+            <intent-filter>
+                <action android:name="com.xu.Jni" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
     </application>
 
