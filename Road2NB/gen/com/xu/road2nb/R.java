@@ -128,37 +128,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int bar_container=0x7f050019;
+        public static final int bar_container=0x7f05001d;
         public static final int bn_add_result=0x7f05000a;
-        public static final int bn_back_1=0x7f05001e;
-        public static final int bn_back_2=0x7f05001f;
+        public static final int bn_back_1=0x7f050022;
+        public static final int bn_back_2=0x7f050023;
         public static final int bn_bindservice=0x7f050008;
         public static final int bn_min_result=0x7f05000b;
         public static final int bn_unbindservice=0x7f050009;
         public static final int content=0x7f05000c;
-        public static final int content_container=0x7f050018;
+        public static final int content_container=0x7f05001c;
+        public static final int editText1=0x7f050015;
+        public static final int editText2=0x7f050016;
         public static final int et_input1=0x7f050006;
         public static final int et_input2=0x7f050007;
         public static final int fm_tv1=0x7f05000e;
         public static final int fm_tv2=0x7f05000f;
         public static final int fm_tv3=0x7f050010;
-        public static final int fragment1=0x7f050016;
-        public static final int fragment2=0x7f050017;
-        public static final int fragment_container=0x7f050015;
+        public static final int fragment1=0x7f05001a;
+        public static final int fragment2=0x7f05001b;
+        public static final int fragment_container=0x7f050019;
         public static final int fragment_tv1=0x7f050011;
         public static final int fragment_tv2=0x7f050012;
         public static final int fullscreen=0x7f050003;
         public static final int left=0x7f050000;
-        public static final int lv_content_list=0x7f050014;
+        public static final int lv_content_list=0x7f050018;
         public static final int margin=0x7f050002;
         public static final int menu=0x7f05000d;
         public static final int right=0x7f050001;
         public static final int selected_view=0x7f050004;
-        public static final int slidingmenumain=0x7f050020;
-        public static final int tv_bar1=0x7f05001a;
-        public static final int tv_bar2=0x7f05001b;
-        public static final int tv_bar3=0x7f05001c;
-        public static final int tv_bar4=0x7f05001d;
+        public static final int slidingmenumain=0x7f050024;
+        public static final int test=0x7f050017;
+        public static final int textView1=0x7f050014;
+        public static final int tv_bar1=0x7f05001e;
+        public static final int tv_bar2=0x7f05001f;
+        public static final int tv_bar3=0x7f050020;
+        public static final int tv_bar4=0x7f050021;
         public static final int tv_calculate_result=0x7f050005;
         public static final int tv_item_content=0x7f050013;
     }
@@ -169,12 +173,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int fragments_dymanic_layout=0x7f030003;
         public static final int fragments_layout=0x7f030004;
         public static final int item_layout=0x7f030005;
-        public static final int main_layout=0x7f030006;
-        public static final int myfragments_activity_dymanic_layout=0x7f030007;
-        public static final int myfragments_activity_static_layout=0x7f030008;
-        public static final int myonnewintent_layout=0x7f030009;
-        public static final int myresultactivity_layout=0x7f03000a;
-        public static final int slidingmenumain=0x7f03000b;
+        public static final int jni_layout=0x7f030006;
+        public static final int main_layout=0x7f030007;
+        public static final int myfragments_activity_dymanic_layout=0x7f030008;
+        public static final int myfragments_activity_static_layout=0x7f030009;
+        public static final int myonnewintent_layout=0x7f03000a;
+        public static final int myresultactivity_layout=0x7f03000b;
+        public static final int slidingmenumain=0x7f03000c;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
