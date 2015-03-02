@@ -76,6 +76,25 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="kinds.MyHistogramViewActivity"
+            android:label="MyHistogramViewActivity" >
+            <intent-filter>
+                <action android:name="com.xu.Histogram" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="kinds.MyRoundProgressBarActivity"
+            android:label="MyHistogramViewActivity" >
+            <intent-filter>
+                <action android:name="com.xu.RoundProgressBar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
     </application>
 

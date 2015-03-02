@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.xu.road2nb"  
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"    
+    android:layout_height="match_parent"
+    android:background="#000000" >    
+    
+    
+    <views.RoundProgressBar
+        android:id="@+id/roundProgressBar1"    
+        android:layout_width="80dp"    
+        android:layout_height="80dp"    
+            
+        android_custom:roundColor="#E5E5E5"    
+        android_custom:roundProgressColor="#FBB15C"    
+        android_custom:textColor="#FBB15C"    
+        android_custom:roundWidth="10dp"    
+        android_custom:textSize="18sp"
+            
+        />  
+        
+     <views.RoundProgressBar
+        android:id="@+id/roundProgressBar2"    
+        android:layout_width="80dp"    
+        android:layout_height="80dp"    
+            
+        android_custom:roundColor="#E5E5E5"    
+        android_custom:roundProgressColor="#8AB0F7"    
+        android_custom:textColor="#8AB0F7"    
+        android_custom:roundWidth="15dp"    
+        android_custom:textSize="18sp"
+            
+        />  
+        
+      <views.RoundProgressBar
+        android:id="@+id/roundProgressBar3"    
+        android:layout_width="80dp"    
+        android:layout_height="80dp"    
+            
+        android_custom:roundColor="#E5E5E5"    
+        android_custom:roundProgressColor="#EF7776"    
+        android_custom:textColor="#EF7776" 
+        android_custom:roundWidth="8dp"    
+        android_custom:textSize="18sp"
+            
+        />  
+</LinearLayout> 

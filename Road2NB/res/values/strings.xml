@@ -8,6 +8,8 @@
         <item >Usage: Fragment</item>
         <item >Usage: AIDL</item>
         <item >Usage: Jni</item>
+        <item >Usage: Histogram</item>
+        <item >Usage: RoundProgressBar</item>
     </string-array>
 
 </resources>
