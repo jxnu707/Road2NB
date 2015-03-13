@@ -10,6 +10,8 @@
         <item >Usage: Jni</item>
         <item >Usage: Histogram</item>
         <item >Usage: RoundProgressBar</item>
+        <item >Usage: Handler</item>
+        <item >Usage: WebView</item>
     </string-array>
 
 </resources>

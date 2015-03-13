@@ -1,6 +1,6 @@
-package service.aidl;
+package services;
 
-interface ICalcAidl {
+interface ICalculate {
 	
 	int add (int a, int b);
 	int min (int a, int b);

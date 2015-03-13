@@ -2,7 +2,8 @@ package kinds;
 
 import com.xu.road2nb.R;
 
-import service.aidl.ICalcAidl;
+import services.ICalculate;
+import services.MyCalcAidlService;
 import utils.AndroidUtils;
 import views.fragments.MyContentFragMent;
 import android.app.Activity;
@@ -27,7 +28,7 @@ public class MyAidlActivity extends Activity implements OnClickListener{
 	
 	private static final int REFRESH_VIEW = 0;
 	
-	private ICalcAidl mICalcAidl;
+	private ICalculate mICalcAidl;
 	
 	private EditText et_num_1;
 	private EditText et_num_2;
@@ -96,9 +97,9 @@ public class MyAidlActivity extends Activity implements OnClickListener{
 		public void onServiceConnected(ComponentName name, IBinder service) {
 			// TODO Auto-generated method stub
 			Log.d(TAG, "onServiceConnected");
-			//Cast an IBinder object into an service.aidl.ICalcAidl interface, generating a proxy if needed.
-			//通过根据aidl文件自动编译的ICalcAidl.java(gen路径下)文件，获得一个service的代理（一个ICalcAidl接口的实例）
-			mICalcAidl = ICalcAidl.Stub.asInterface(service);
+			//Cast an IBinder object into an services.ICalculate interface, generating a proxy if needed.
+			//通过根据aidl文件自动编译的ICalculate.java(gen路径下)文件，获得一个service的代理（一个ICalcAidl接口的实例）
+			mICalcAidl = ICalculate.Stub.asInterface(service);
 		}
 	};
 
@@ -109,8 +110,10 @@ public class MyAidlActivity extends Activity implements OnClickListener{
 		case R.id.bn_bindservice:
 			Log.d(TAG, "bind Button invoked.");
 			Intent bind_intent = new Intent();
-//			System.out.println(ICalcAidl.class.getName());
-			bind_intent.setAction("service.aidl.calc");
+			System.out.println(ICalculate.class.getName());
+			//隐式intent(setAction方式) 用startService是不安全的
+//			bind_intent.setAction("services.MyCalcAidlService");
+			bind_intent.setClass(this, MyCalcAidlService.class);
 			startService(bind_intent);
 			bindService(bind_intent, conn, BIND_AUTO_CREATE);
 			break;

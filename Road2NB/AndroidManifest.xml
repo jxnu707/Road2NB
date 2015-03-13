@@ -6,7 +6,8 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="18" />
-
+    
+	<uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -95,6 +96,36 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="kinds.MyHandlerActivity"
+            android:label="MyHandlerActivity" 
+            >
+            <intent-filter>
+                <action android:name="com.xu.Handler" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="kinds.MyWebViewActivity"
+            android:label="MyWebViewActivity" 
+            >
+            <intent-filter>
+                <action android:name="com.xu.WebView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="services.MyCalcAidlService"
+            	 android:process=":remote">
+            <intent-filter >
+                <action android:name="services.calc"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
 
     </application>
 
