@@ -119,6 +119,24 @@
             </intent-filter>
         </activity>
         
+        <activity
+            android:name="kinds.MyBindServiceActivity"
+            android:label="MyBindServiceActivity" 
+            >
+            <intent-filter>
+                <action android:name="com.xu.BindService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="services.MyBindService">
+            <intent-filter >
+                <action android:name="services.MyBindService"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        
         <service android:name="services.MyCalcAidlService"
             	 android:process=":remote">
             <intent-filter >

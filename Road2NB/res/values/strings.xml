@@ -12,6 +12,7 @@
         <item >Usage: RoundProgressBar</item>
         <item >Usage: Handler</item>
         <item >Usage: WebView</item>
+        <item >Usage: BindService</item>
     </string-array>
 
 </resources>
